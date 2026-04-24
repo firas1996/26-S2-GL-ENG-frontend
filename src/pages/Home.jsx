@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -23,7 +23,11 @@ const Home = () => {
     navigate("/login");
   };
   const usersItems = usersList.map((item) => {
-    return <li>{item.name}</li>;
+    return (
+      <Link to={`/details/${item.id}`}>
+        <li>{item.name}</li>
+      </Link>
+    );
   });
   return (
     <div>
