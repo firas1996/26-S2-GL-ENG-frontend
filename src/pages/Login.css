@@ -1,0 +1,39 @@
+.container {
+  width: 90%;
+  max-width: 30rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgb(48, 47, 47);
+  border: 2px solid white;
+  border-radius: 12px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20dvh;
+}
+label{
+  color: white;
+  font-size: 18px;
+}
+input{
+  background-color: white;
+  height: 24px;
+  color: black;
+  font-size: 18px;
+}
+.divInp{
+  margin-top: 25px;
+}
+button{
+  color: white;
+  font-size: 18px;
+  background-color: purple;
+  border: none;
+  padding: 5px 15px;
+  margin-top: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
